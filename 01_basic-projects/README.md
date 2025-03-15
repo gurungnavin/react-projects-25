@@ -1,8 +1,15 @@
-# React + Vite
+## React Project(React プロジェクト：ビギナー向け)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### 1. Accordian:
 
-Currently, two official plugins are available:
+ENG: A collapsible UI component that shows or hides content when clicked. Commonly used in FAQs.
+【日本語版】アコーディオン: クリックでコンテンツを表示・非表示にできる折りたたみ式の UI コンポーネント。FAQ などでよく使われます。
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+#### STEP-1
+- create data as name data.js for accordian.
+
+#### STEP-2
+- create jsx file for Accordian jsx(Accordian.jsx)
+
+### STEP-3
+- 
