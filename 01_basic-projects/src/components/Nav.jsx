@@ -1,14 +1,13 @@
-import React from 'react'
 import { navLinks } from '../constants'
 import { logo } from '../assets'
 import { hamburger } from '../assets'
 
 const Nav = () => {
   return (
-    <header className="px-4 md:px-14 lg:px-20 xl:px-48 absolute w-full z-10 flex items-center justify-between bg-white/30 backdrop-blur-none border-b-2 border-gray-100 shadow-sm">
-      {/* 　this section is for logo(image) and text(PROJECTS) */}
+    <header className="px-4 md:px-3 lg:px-20 xl:px-32 absolute w-full z-10 top-0 left-0 flex items-center justify-between bg-white/30 backdrop-blur-none border-b-2 border-gray-100 shadow-sm">
+      {/* this section is for logo(image) and text(PROJECTS) */}
        <div className='flex items-center justify-center sm:gap-3 gap-0'>
-       <a href="#"><img src={logo} alt="logo" className='w-20' /></a>
+       <a href="#"><img src={logo} alt="logo" className='w-16' /></a>
        <h3 className='text-3xl font-bold'>PROJECTS</h3>
        </div>
 
