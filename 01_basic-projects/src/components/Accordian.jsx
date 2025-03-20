@@ -54,20 +54,27 @@ const Accordian = () => {
             >
               <div className="flex items-center justify-between w-auto h-11 px-8 py-2 text-xl">
                 <h3>{item.question}</h3>
-                <span>▼</span>
+                <span className="font-bold text-xs">
+                  {isOn
+                    ? multiple.indexOf(item.id) !== -1
+                      ? "閉じる"
+                      : "開く"
+                    : selected === item.id
+                    ? "閉じる"
+                    : "開く"}
+                </span>
               </div>
-              {
-                isOn ? multiple.indexOf(item.id) !== -1 &&
-                <div className="bg-green-100 px-8 py-4 text-xl">
-                  {item.answer}
-                </div>
-                :
-                selected === item.id &&
-                <div className="bg-green-100 px-8 py-4 text-xl">
-                {item.answer}
-              </div>
-              }
-
+              {isOn
+                ? multiple.indexOf(item.id) !== -1 && (
+                    <div className="bg-green-100 px-8 py-4 text-xl">
+                      {item.answer}
+                    </div>
+                  )
+                : selected === item.id && (
+                    <div className="bg-green-100 px-8 py-4 text-xl">
+                      {item.answer}
+                    </div>
+                  )}
             </div>
           </div>
         ))
