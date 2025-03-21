@@ -1,6 +1,6 @@
 import { useState } from "react";
-import data from "../constants/accordian.data.js";
-import ToggleButton from "./ToggleButton.jsx";
+import data from "./accordian.data.js"
+import ToggleButton from "../ToggleButton.jsx";
 const Accordian = () => {
   const [selected, setSelected] = useState(null);
   const [isOn, setIsOn] = useState(false);

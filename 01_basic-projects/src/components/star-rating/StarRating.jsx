@@ -26,7 +26,7 @@ const StarRating = ({noOfStar = 5}) => {
   }
   
   return (
-    <section className='min-h-[50vh] w-full flex justify-center items-center bg-slate-100'>
+    <section className='h-[40vh] w-full flex justify-center items-center bg-slate-100'>
       <div className='flex flex-col items-center justify-center w-80 bg-gray-100 h-32 shadow-md'>
       <h1 className='text-xl'>{rating > 1 ? `${rating} Stars Ratings` : `${rating} Star Rating`}</h1>
       <div className='flex'>  {/* Make stars align horizontally */}
