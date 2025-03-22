@@ -60,7 +60,7 @@ const ImageSlider = () => {
   }
  
   return (
-    <section className='min-h-[60vh] w-full flex flex-col justify-center items-center gap-12 bg-slate-300'>
+    <section className='min-h-[60vh] w-full flex flex-col justify-center items-center gap-12 bg-slate-300 py-4'>
       <div className='flex items-center justify-center relative w-[600px] h-[400px] bg-gray-100 p-4'>
         <GrPrevious
           className='absolute top-1/2 left-[-50px] transform -translate-y-1/2 cursor-pointer text-4xl bg-white  hover:bg-slate-300 hover:text-white hover:border hover:shadow-lg rounded-full p-2'
