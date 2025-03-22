@@ -10,12 +10,12 @@ import { menus } from "./components/menu-tree/index.js";
 export default function App() {
   return (
     <div>
-      {/* <Nav />
+      <Nav />
       <Accordian /> 
       <RandomColorGenerator />
       <StarRating />
       <ImageSlider />
-      <LoadMore /> */}
+      <LoadMore />
       <MenuTree />
     </div>
   )
