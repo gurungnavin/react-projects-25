@@ -11,14 +11,14 @@ import LightDarkMode from "./components/ligth-dark-mode/LightDarkMode";
 export default function App() {
   return (
     <div>
-      {/* <Nav />
+      <Nav />
       <Accordian /> 
       <RandomColorGenerator />
       <StarRating />
       <ImageSlider />
       <LoadMore />
       <MenuTree />
-      <QRCodeGenerator /> */}
+      <QRCodeGenerator />
       <LightDarkMode />
     </div>
   )
