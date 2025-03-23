@@ -5,18 +5,21 @@ import RandomColorGenerator from "./components/random-color-generate/RandomColor
 import StarRating from "./components/star-rating/StarRating";
 import LoadMore from "./components/load-more/LoadMore";
 import MenuTree from "./components/menu-tree/MenuTree";
-import { menus } from "./components/menu-tree/index.js";
-
+import QRCodeGenerator from "./components/QR-code-generator/QRCodeGenerator";
+import LightDarkMode from "./components/ligth-dark-mode/LightDarkMode";
+ 
 export default function App() {
   return (
     <div>
-      <Nav />
+      {/* <Nav />
       <Accordian /> 
       <RandomColorGenerator />
       <StarRating />
       <ImageSlider />
       <LoadMore />
       <MenuTree />
+      <QRCodeGenerator /> */}
+      <LightDarkMode />
     </div>
   )
 }

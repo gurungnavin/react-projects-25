@@ -16,14 +16,12 @@ const MenuItem = ({ item }) => {
 
   // Mapping of labels to icons
   const iconMapping = {
-    Dashboard: <AiFillDashboard className="text-xl" />,
-    Users: <FaUser className="text-xl" />,
-    Settings: <IoSettingsSharp className="text-xl" />,
-    Overview : < GrOverview />,
-    Analytics : <IoMdAnalytics />,
-    Reports : <TbReportAnalytics />,
-
-    
+    Dashboard: <AiFillDashboard className="text-xl" onClick={() => handleToggleChildren('Dashboard')} />,
+    Users: <FaUser className="text-xl" onClick={() => handleToggleChildren('Users')} />,
+    Settings: <IoSettingsSharp className="text-xl" onClick={() => handleToggleChildren('Settings')} />,
+    Overview: <GrOverview onClick={() => handleToggleChildren('Overview')} />,
+    Analytics: <IoMdAnalytics onClick={() => handleToggleChildren('Analytics')} />,
+    Reports: <TbReportAnalytics onClick={() => handleToggleChildren('Reports')} />,
   };
 
   const [displayCurrentChildren, setDisplayCurrentChildren] = useState({});
@@ -40,7 +38,9 @@ const MenuItem = ({ item }) => {
         <div className="flex items-center gap-2">
           {/* Render the icon if it exists in the mapping(add the icon with matcing of Label) */}
           {iconMapping[item.label] ? iconMapping[item.label] : <span className="text-xl"></span>}
-          <p className="text-base font-bold">{item.label}</p>
+          <p
+           onClick={() => handleToggleChildren(item.label)} 
+          className="text-base font-bold">{item.label}</p>
         </div>
         {item && item.children && item.children.length ? (
           <span onClick={() => handleToggleChildren(item.label)}>

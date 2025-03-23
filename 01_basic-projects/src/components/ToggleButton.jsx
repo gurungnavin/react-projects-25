@@ -6,7 +6,7 @@ const ToggleButton = ({isOn, setIsOn}) => {
     <button
       onClick={() => setIsOn(!isOn)}
       className={`w-16 h-8 flex items-center bg-gray-300 rounded-full p-1 transition-all duration-300 ${
-        isOn ? "bg-green-500" : "bg-gray-400"
+        isOn ? "bg-gray-600" : "bg-gray-400"
       }`}
     >
       <div
