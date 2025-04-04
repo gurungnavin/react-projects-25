@@ -12,7 +12,7 @@ import ScrollIndicator from "./components/scroll-indicator/ScrollIndicator";
 export default function App() {
   return (
     <div>
-      <Nav /> */}
+      {/* <Nav />
       <Accordian /> 
       <RandomColorGenerator />
       <StarRating />
@@ -20,8 +20,8 @@ export default function App() {
       <LoadMore />
       <MenuTree />
       <QRCodeGenerator />
-      <LightDarkMode />
-      {/* <ScrollIndicator />       */}
+      <LightDarkMode /> */}
+      <ScrollIndicator />      
     </div>
   )
 }

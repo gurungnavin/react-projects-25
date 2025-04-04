@@ -6,6 +6,7 @@ const scrollIndicator = () => {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
+  const [scrollPercentage, setScrollPercentage] = useState(0);
 
   const fetchData = async () => {
     setLoading(true);
@@ -31,6 +32,24 @@ const scrollIndicator = () => {
   useEffect(() => {
     fetchData()
   }, [])
+  
+  
+  const handlerScrollPercentage = () => {
+    const howMuchScrolled =
+    document.body.scrollTop || document.documentElement.scrollTop;
+  
+    const height =
+    document.documentElement.scrollHeight -
+    document.documentElement.clientHeight;
+    console.log(`how much scrolled: ${howMuchScrolled} Height : ${height}`)  
+  }
+
+  useEffect(() => {
+    window.addEventListener('scroll', handlerScrollPercentage)
+    return () => {
+      window.removeEventListener('scroll', ()=> {})
+    }
+  },[])
 
 
 
