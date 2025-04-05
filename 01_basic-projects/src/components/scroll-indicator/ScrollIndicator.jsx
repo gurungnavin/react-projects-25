@@ -41,7 +41,9 @@ const scrollIndicator = () => {
     const height =
     document.documentElement.scrollHeight -
     document.documentElement.clientHeight;
-    console.log(`how much scrolled: ${howMuchScrolled} Height : ${height}`)  
+    // to ignore the decimal value and get the whole number
+    // Math.ceil to round up the value to the nearest whole number
+    setScrollPercentage(Math.ceil((howMuchScrolled/ height) * 100));
   }
 
   useEffect(() => {
@@ -52,6 +54,7 @@ const scrollIndicator = () => {
   },[])
 
 
+//  console.log(scrollPercentage);
 
   if (loading) {
      return <div className="min-h-[60vh] w-full flex items-center justify-center">
@@ -70,11 +73,15 @@ const scrollIndicator = () => {
   
   return (
     <div>
+      {/* This div is for scroll bar display while scrolling */}
+      <div className='fixed top-0 left-0 w-full h-[10px] bg-gray-200'>
+        <div className='bg-green-500 h-full' style={{width: `${scrollPercentage}%`}}></div>
+      </div>
        <div>
         {
           data && data.length ? data.map((item, index) => {
             return (
-                <h1 className='text-center text-orange-500' key={index}>{item.title}</h1>
+                <h1 className='px-6 py-2 border bg-slate-300 text-center text-black font-bold mx-32' key={index}>{item.title}</h1>
             )
           })
           : null
