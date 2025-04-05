@@ -8,6 +8,7 @@ import MenuTree from "./components/menu-tree/MenuTree";
 import QRCodeGenerator from "./components/QR-code-generator/QRCodeGenerator";
 import LightDarkMode from "./components/ligth-dark-mode/LightDarkMode";
 import ScrollIndicator from "./components/scroll-indicator/ScrollIndicator";
+import TabList from "./components/custom-tabs/TabList";
  
 export default function App() {
   return (
@@ -20,8 +21,9 @@ export default function App() {
       <LoadMore />
       <MenuTree />
       <QRCodeGenerator />
-      <LightDarkMode /> */}
-      <ScrollIndicator />      
+      <LightDarkMode />
+      <ScrollIndicator />       */}
+      <TabList />
     </div>
   )
 }
